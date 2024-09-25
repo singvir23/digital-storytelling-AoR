@@ -1,5 +1,12 @@
-.App {
+/* src/App.css */
+
+.app {
   text-align: center;
+}
+
+.grooming-image {
+  width: 200px; /* Change this value to adjust the size */
+  height: auto; /* Maintains aspect ratio */
 }
 
 .App-logo {
