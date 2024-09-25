@@ -1,45 +1,118 @@
 /* src/App.css */
-
 .app {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  margin: 20px;
   text-align: center;
+  color: #333;
+}
+
+.app h1 {
+  font-size: 2rem;
+  color: #6b705c;
+}
+
+/* Base styles for streaming text */
+.streaming-text {
+  opacity: 0; /* Hidden initially */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fadeInWordByWord 4s steps(30, end) forwards;
+}
+
+.delayed-button {
+  opacity: 0;
+  animation: fadeInElement 2s forwards;
+  animation-delay: 25s; /* Adjust this delay for proper timing */
+}
+
+/* Animation for word-by-word streaming */
+@keyframes fadeInWordByWord {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Additional delays for each paragraph */
+.delay-1 {
+  animation-delay: 0s;
+  align-items: center;
+}
+
+.delay-2 {
+  animation-delay: 5s; /* Adjust the delay timing based on content length */
+  align-items: center;
+}
+
+.delay-3 {
+  animation-delay: 10s;
+  align-items: center;
+}
+
+.delay-4 {
+  animation-delay: 15s;
+  align-items: center;
+}
+
+.delay-5 {
+  animation-delay: 20s;
+  align-items: center;
+}
+
+.delay-6 {
+  animation-delay: 30s;
+  align-items: center;
+}
+
+.delay-7 {
+  animation-delay: 35s;
+  align-items: center;
+}
+
+.delay-8 {
+  opacity: 0;
+  animation: fadeInElement 2s forwards;
+  animation-delay: 40s;
+  align-items: center;
+}
+
+.delay-9 {
+  animation-delay: 45s;
+  align-items: center;
+}
+
+
+/* General fade-in for other elements like buttons and images */
+@keyframes fadeInElement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: #ffffcc;
+  padding: 0 5px;
+  font-weight: bold;
 }
 
 .grooming-image {
-  width: 200px; /* Change this value to adjust the size */
-  height: auto; /* Maintains aspect ratio */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  max-width: 400px;
+  display: block;
+  margin: 20px 0;
+  opacity: 0; /* Initially hidden */
+  align-content: center;
 }
