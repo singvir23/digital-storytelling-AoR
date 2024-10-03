@@ -1,33 +1,51 @@
-/* src/App.css */
 .app {
   font-family: 'Georgia', serif;
   line-height: 1.8;
   margin: 20px;
   text-align: center;
   color: #333;
+  max-width: 100vw;
+  padding: 0 10px;
 }
 
-.app h1 {
-  font-size: 2rem;
+/* Base styles for section and appendix titles */
+.chapter-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 40px;
   color: #6b705c;
+  text-align: center;
+  opacity: 0; /* Hidden initially */
+  animation: fadeInElement 2s forwards;
+}
+
+/* Stream in the appendix title */
+h1.chapter-title.appendix-title {
+  animation-delay: 66s; /* Adjust delay for Appendix section */
 }
 
 /* Base styles for streaming text */
 .streaming-text {
   opacity: 0; /* Hidden initially */
   display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: fadeInWordByWord 4s steps(30, end) forwards;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+  animation: fadeInWordByWord 2s steps(30, end) forwards;
 }
 
-.delayed-button {
-  opacity: 0;
-  animation: fadeInElement 2s forwards;
-  animation-delay: 25s; /* Adjust this delay for proper timing */
+/* Fade-in keyframes for other elements like buttons and images */
+@keyframes fadeInElement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Animation for word-by-word streaming */
+/* Word-by-word streaming animation */
 @keyframes fadeInWordByWord {
   from {
     width: 0;
@@ -39,65 +57,132 @@
   }
 }
 
-/* Additional delays for each paragraph */
+/* Delays for each paragraph (adjusted for each streaming effect) */
 .delay-1 {
   animation-delay: 0s;
-  align-items: center;
 }
 
 .delay-2 {
-  animation-delay: 5s; /* Adjust the delay timing based on content length */
-  align-items: center;
+  animation-delay: 3s;
 }
 
 .delay-3 {
-  animation-delay: 10s;
-  align-items: center;
+  animation-delay: 6s;
 }
 
 .delay-4 {
-  animation-delay: 15s;
-  align-items: center;
+  animation-delay: 9s;
 }
 
 .delay-5 {
-  animation-delay: 20s;
-  align-items: center;
+  animation-delay: 12s;
 }
 
 .delay-6 {
-  animation-delay: 30s;
-  align-items: center;
+  animation-delay: 15s;
 }
 
 .delay-7 {
-  animation-delay: 35s;
-  align-items: center;
+  animation-delay: 18s;
 }
 
 .delay-8 {
-  opacity: 0;
-  animation: fadeInElement 2s forwards;
-  animation-delay: 40s;
-  align-items: center;
+  animation-delay: 21s;
 }
 
 .delay-9 {
+  animation-delay: 24s;
+}
+
+.delay-10 {
+  animation-delay: 27s;
+}
+
+.delay-11 {
+  animation-delay: 30s;
+}
+
+.delay-12 {
+  animation-delay: 33s;
+}
+
+.delay-13 {
+  animation-delay: 36s;
+}
+
+.delay-14 {
+  animation-delay: 39s;
+}
+
+.delay-15 {
+  animation-delay: 42s;
+}
+
+.delay-16 {
   animation-delay: 45s;
-  align-items: center;
 }
 
-
-/* General fade-in for other elements like buttons and images */
-@keyframes fadeInElement {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.delay-17 {
+  animation-delay: 48s;
 }
 
+.delay-18 {
+  animation-delay: 51s;
+}
+
+.delay-19 {
+  animation-delay: 54s;
+}
+
+.delay-20 {
+  animation-delay: 57s;
+}
+
+.delay-21 {
+  animation-delay: 60s;
+}
+
+.delay-22 {
+  animation-delay: 63s;
+}
+
+.delay-23 {
+  animation-delay: 66s;
+}
+
+.delay-24 {
+  animation-delay: 69s;
+}
+
+.delay-25 {
+  animation-delay: 72s;
+}
+
+.delay-26 {
+  animation-delay: 75s;
+}
+
+/* Fade in delay for appendix and titles */
+h1.chapter-title.delay-1 {
+  animation-delay: 0s;
+}
+
+h1.chapter-title.delay-14 {
+  animation-delay: 39s;
+}
+
+/* For the Appendix title */
+h1.chapter-title.appendix-title {
+  animation-delay: 66s;
+}
+
+/* Make the appendix and chapter titles stream in */
+.appendix-title {
+  animation: fadeInElement 2s forwards;
+  opacity: 0;
+}
+
+/* Links */
 .clickable {
   cursor: pointer;
   text-decoration: underline;
@@ -110,9 +195,16 @@
 }
 
 .grooming-image {
-  max-width: 400px;
+  max-width: 100%;
   display: block;
-  margin: 20px 0;
-  opacity: 0; /* Initially hidden */
-  align-content: center;
+  margin: 20px auto;
+  opacity: 0;
+  animation: fadeInElement 2s forwards;
+  animation-delay: 36s;
+}
+
+.delayed-button {
+  opacity: 0;
+  animation: fadeInElement 2s forwards;
+  animation-delay: 24s;
 }
