@@ -162,6 +162,14 @@ h1.chapter-title.appendix-title {
   animation-delay: 75s;
 }
 
+.delay-27 {
+  animation-delay: 78s;
+}
+
+.delay-28 {
+  animation-delay: 81s;
+}
+
 /* Fade in delay for appendix and titles */
 h1.chapter-title.delay-1 {
   animation-delay: 0s;

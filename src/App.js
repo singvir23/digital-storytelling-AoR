@@ -148,22 +148,30 @@ function App() {
 
       {/* Streaming title */}
       <h1 className="chapter-title appendix-title">APPENDIX</h1>
-
       <p className="streaming-text delay-23">
-        Geryon feels this pull all the time, stuck as he is on the wings of the past. Yet, in the fractured space between body and earth lies the invisible tether of time; for an instant, that gets shattered: What is pain when wings form one extension of self? A reminder, perhaps, that flight carries burden, too.
+        Geryon feels this pull constantly, wings bound to the shoulders of memory. Not part of him but apart—living archives, restless in their folds. Time sifts through them like wind through feathers: momentary, disjointed, resistant to order. What does it mean to carry flight on your back when the past clings to every beat?
       </p>
 
       <p className="streaming-text delay-24">
-        Geryon's wings were not a part of him but memories in their own right: living, breathing, with their own weight of the choices of action in the past. What pulled was not just physical. It was the weight of choices and moments forgotten, repressed. Each of his flappings sent ripples through time, distorting his present. He was no longer able to fly freely, for each flight was a battle against himself.
+        Pain, perhaps, is just the sound of wings meeting themselves. Each movement writes and rewrites his story, a struggle to escape and a tether to stay. Possibility was always double-edged. Wings promise freedom but deliver weight. Is it the shape of wings, after all, that makes him fly—or the resistance of gravity itself?
       </p>
 
       <p className="streaming-text delay-25">
-        In some sense, wings meant possibilities, an escape route. Of course, wings also meant a link to the past. Each time Geryon began to fly, the past pulled him backward, and he never reached true freedom. Was it possible that his wings had been a weight all along, weights designed in the shape of wings to weigh him down? A reminder that no matter how far he may fly, the pull of the earth is always there.
+        Geryon’s flight is no rebellion. It’s an excavation. The air becomes an archive where he stores the unspoken and forgotten. Yet every motion opens old wounds. Each leap skyward forces him to look down and see his past etched into the earth below.
       </p>
 
       <p className="streaming-text delay-26">
-        This is not retelling; this is reimagination of what a time traveler would try to make sense of, not just the form, but that intangible spirit of Geryon's experience. Perhaps it is in this constant struggle that his story deepens into multidimensional existence between past and present, between myth and reality.
+        His story isn’t linear—it drifts, like an improvisation that refuses to resolve. Wings are jazz, and Geryon is the soloist, uncertain where each note will land.
       </p>
+
+      <p className="streaming-text delay-27">
+        What if his wings aren’t wings at all? What if they’re just history, dressed up as escape? And what if escape is only ever circular, a long route back to the thing you were running from?
+      </p>
+
+      <p className="streaming-text delay-28">
+        This isn’t retelling. This is palimpsest—where the story rewrites itself with every stroke, leaving its ghosts behind.
+      </p>
+
     </div>
   );
 }
